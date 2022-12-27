@@ -20,3 +20,7 @@ body {
     justify-items: center;
     // grid-template-rows: 1fr 2fr 1fr;
 }
+
+$color-gray-one: #666666;
+$color-gray-two: #838383;
+@import './searchBar.scss';

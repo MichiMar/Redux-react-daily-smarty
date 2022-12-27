@@ -7,10 +7,6 @@ class SearchBar extends Component {
   //handleFormSubmit = ({query}) {
     handleFormSubmit = ({query}) =>{
         this.props.onSubmit(query);
-        // console.log('trying to handle submit for query', query);
-        // this.props.history.push('/results')
-        
-        //navigate to new route.
     }
 
     renderInput(field) {
@@ -21,7 +17,10 @@ class SearchBar extends Component {
         const { handleSubmit } = this.props
         return (
             <form className='search-bar' onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
-                <Field name='query' component={this.renderInput} />
+                <div className='search-bar__wrapper'>
+                    <Field name='query' component={this.renderInput} />
+                    <p>Press return to search</p>
+                </div>
             </form>
         )
     }
