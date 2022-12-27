@@ -36,5 +36,9 @@ ul {
 $color-gray-one: #666666;
 $color-gray-two: #838383;
 $color-blue-one: #0079FF;
+@import './mixinx.scss';
 @import './searchBar.scss';
 @import './recentPosts';
+@import './post.scss';
+@import './home.scss';
+@import './results.scss';
